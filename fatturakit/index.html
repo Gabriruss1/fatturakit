@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FatturaKit — Fatture gratis, nel browser, senza registrazione</title>
+  <meta name="description" content="Genera una fattura valida in 60 secondi. Calcolo automatico INPS e forfettario. Senza abbonamenti, senza account, tutto nel tuo browser.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html { font-family: 'Inter', system-ui, sans-serif; scroll-behavior: smooth; }
+    .glow { box-shadow: 0 0 60px -12px rgba(56,189,248,0.35); }
+  </style>
+</head>
+<body class="bg-neutral-950 text-neutral-200 antialiased">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 inset-x-0 z-50 bg-neutral-950/80 backdrop-blur border-b border-neutral-800">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-bold tracking-tight text-white text-lg">Fattura<span class="text-sky-400">Kit</span></a>
+      <div class="flex items-center gap-6 text-sm">
+        <a href="#come-funziona" class="text-neutral-400 hover:text-white transition-colors hidden sm:block">Come funziona</a>
+        <a href="#kit-pro" class="text-neutral-400 hover:text-white transition-colors">Kit Pro</a>
+        <a href="fattura.html" class="px-4 py-2 rounded-lg bg-sky-500 text-white font-semibold hover:bg-sky-400 transition-colors">Apri il tool</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="pt-36 pb-24 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-sky-400 font-medium text-sm tracking-wide uppercase mb-4">Gratis. Per sempre. Senza registrazione.</p>
+      <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+        La fattura in 60 secondi.<br>Non in un abbonamento.
+      </h1>
+      <p class="mt-6 text-lg text-neutral-400 max-w-xl mx-auto leading-relaxed">
+        Generatore di fatture che funziona nel tuo browser. Calcola INPS e forfettario in automatico.
+        Scarica in PDF. Nessun account, nessuna carta di credito, nessun "piano free limitato".
+      </p>
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="fattura.html" class="glow px-8 py-4 rounded-xl bg-sky-500 text-white font-semibold text-lg hover:bg-sky-400 transition-all">
+          Genera la fattura →
+        </a>
+        <a href="#kit-pro" class="px-8 py-4 rounded-xl border border-neutral-700 text-neutral-300 font-semibold text-lg hover:bg-neutral-900 transition-colors">
+          Vedi il Kit Pro
+        </a>
+      </div>
+      <p class="mt-6 text-sm text-neutral-500">I tuoi dati restano nel tuo browser. Non li vediamo, non li raccogliamo. Nessun cookie.</p>
+    </div>
+  </header>
+
+  <!-- COME FUNZIONA -->
+  <section id="come-funziona" class="py-24 px-6 border-t border-neutral-900">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-white text-center tracking-tight">Tre passaggi. Fatto.</h2>
+      <div class="grid md:grid-cols-3 gap-6 mt-16">
+        <div class="p-8 rounded-2xl bg-neutral-900 border border-neutral-800">
+          <p class="text-sky-400 font-mono text-sm mb-4">01</p>
+          <h3 class="text-xl font-semibold text-white mb-3">Inserisci i dati</h3>
+          <p class="text-neutral-400 leading-relaxed">Tu, il cliente, le righe. Il regime (forfettario o IVA). Un minuto, in helicopter.</p>
+        </div>
+        <div class="p-8 rounded-2xl bg-neutral-900 border border-neutral-800">
+          <p class="text-sky-400 font-mono text-sm mb-4">02</p>
+          <h3 class="text-xl font-semibold text-white mb-3">Il calcolo fa da sé</h3>
+          <p class="text-neutral-400 leading-relaxed">Coefficienti di redditività, INPS 4%, tassa forfettaria 5% o 15%: applicati in tempo reale.</p>
+        </div>
+        <div class="p-8 rounded-2xl bg-neutral-900 border border-neutral-800">
+          <p class="text-sky-400 font-mono text-sm mb-4">03</p>
+          <h3 class="text-xl font-semibold text-white mb-3">Scarica e invia</h3>
+          <p class="text-neutral-400 leading-relaxed">Salva in PDF (Ctrl+P → Salva come PDF). Inviatela. Fatto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KIT PRO -->
+  <section id="kit-pro" class="py-24 px-6 border-t border-neutral-900">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-sky-400 font-medium text-sm tracking-wide uppercase mb-4">Per chi vuole di più</p>
+      <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">FatturaKit Pro — <span class="text-neutral-400">€9, una volta.</span></h2>
+      <p class="mt-6 text-neutral-400 max-w-xl mx-auto leading-relaxed">
+        Il tool resta gratis. Il Kit Pro serve a chi manda fatture ogni mese e vuole un sistema completo, non un rimedio rapido.
+      </p>
+      <div class="mt-12 grid sm:grid-cols-2 gap-4 text-left max-w-xl mx-auto">
+        <div class="flex gap-3 items-start p-4 rounded-xl bg-neutral-900 border border-neutral-800">
+          <span class="text-sky-400 mt-0.5">◆</span>
+          <p class="text-neutral-300">Template fattura Word + Excel riutilizzabili</p>
+        </div>
+        <div class="flex gap-3 items-start p-4 rounded-xl bg-neutral-900 border border-neutral-800">
+          <span class="text-sky-400 mt-0.5">◆</span>
+          <p class="text-neutral-300">3 modelli di <strong>sollecito di pagamento</strong> (educato / diretto / ultimo)</p>
+        </div>
+        <div class="flex gap-3 items-start p-4 rounded-xl bg-neutral-900 border border-neutral-800">
+          <span class="text-sky-400 mt-0.5">◆</span>
+          <p class="text-neutral-300">Foglio di calcolo liquidità: sai quanto avanza davvero, ogni mese</p>
+        </div>
+        <div class="flex gap-3 items-start p-4 rounded-xl bg-neutral-900 border border-neutral-800">
+          <span class="text-sky-400 mt-0.5">◆</span>
+          <p class="text-neutral-300">Mini-guida PDF: forfettario spiegato in 10 minuti, senza gergo</p>
+        </div>
+      </div>
+      <a data-gumroad href="#"
+         class="glow mt-12 inline-block px-10 py-5 rounded-xl bg-sky-500 text-white font-semibold text-lg hover:bg-sky-400 transition-all">
+        Prendi il Kit Pro — €9
+      </a>
+      <p class="mt-4 text-sm text-neutral-500">Link sicuro via Gumroad. Pagina dimostrativa — checkout attivo appena pubblicato.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-12 px-6 border-t border-neutral-900">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-neutral-500">
+      <p>FatturaKit © 2026 — Fatture per freelance, senza frizioni.</p>
+      <p>Non è consulenza fiscale: verifica con il tuo commercialista.</p>
+      <div class="flex gap-6">
+        <a href="fattura.html" class="hover:text-neutral-300 transition-colors">Tool</a>
+        <a href="mailto:hello@example.com" class="hover:text-neutral-300 transition-colors">Contatti</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
